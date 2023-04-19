@@ -1,0 +1,10 @@
+﻿Löneförväntan
+
+
+Jag vill förutsäga lön baserat på erfarenhet och arbetsområde. Först ville jag begränsa det till programvarukvalitetssäkring och testare i USA, men datasetet jag hittade var mer komplicerat än jag hade velat för min erfarenhet. Istället hittade jag ett dataset för datavetenskapsrelaterade jobb från olika länder. Jag skulle också vilja ha ålder då det är vanligt med olika lön beroende på ens ålder men det finns ej i mitt dataset.
+
+
+Problemet med löneförväntan är att den varierar mycket beroende på plats, land, region och stad. Det finns också klassificering av din erfarenhetsnivå, men eftersom datasetet har erfarenhetsnivåerna ifyllda så är det ett mänskligt problem efter att förutsägningsmodellen är uppfylld.
+
+
+När jag tittar på datasetet kommer fler problem fram, till exempel typ av kontrakt, jobbtitlar som är mycket talrika och USA som är överrepresenterat. Planen är kanske att göra förutsägelsen enbart för USA och konvertera jobbtitlar till mer stereotypa kategorier för att minska antalet från 93 till fem. Jag har 3755 rader, om jag bara använder data där anställda och företaget är i USA kommer jag att ha 2999 rader. Mina fält har inga null-värden och de är lätta att översätta till binära värden. Det finns några olika typer av kontrakt, men om jag bara använder heltidskontrakt så minskar mina 2999 rader till 2991 rader så för att förenkla kommer jag att göra det.
